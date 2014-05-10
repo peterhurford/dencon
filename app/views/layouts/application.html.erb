@@ -1,14 +1,35 @@
-<!DOCTYPE html>
 <html>
-<head>
-  <title>Dencon</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+	<head>
+		<title>Denison Convention - March 29-30 @ Denison</title>
+		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+		<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+		<%= csrf_meta_tags %>
+	</head>
+	<body>
+		<div id="container">
+			<div id="navbar">
+				<a id="logo" href="index.php">
+					<div class="logo">
+						<img src="logo.png">
+						<p align="center">Denison University<br><small>March 29 - 30<br>9 am - 4 am</small></p>
+					</div>
+				</a>
+				<div class="menu">
+					<ul>
+						<li><a id="directions" href="/directions">Directions</a></li>
+						<li><a id="schedule" href="/schedule">Event Schedule</a></li>
+						<li><a id="contactm" href="/contact">Contact</a></li>
+					</ul>
+				</div>
+				<div class="buttons">
+					<ul>
+						<li><a id="fb-b" href="https://www.facebook.com/events/1388301138095585/" title="Facebook"><span>Facebook</span></a></li>
+					</ul>
+				</div>
+			</div>
 
-<%= yield %>
+			<%= yield %>
 
-</body>
+		</div>
+	</body>
 </html>
