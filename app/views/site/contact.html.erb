@@ -1,24 +1,25 @@
 <script>
 	var defaultimg = "contact.jpg";
 </script>
+
+<% # Note, this contact form is no longer operational, and is left just for appearance. %>
 <div id="content">
 	<h1>Contact</h1>
 	<p>Please fill out this form or email <a href="mailto:dencon2014@yahoo.com">dencon2014@yahoo.com</a>.</p>
 
 	<div id="contact">
-		<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
-			<fieldset>
-				<label for="name">Name:</label>
-				<input type="text" name="name" placeholder="John Doe" value="<?php echo $name ?>">
-				
-				<label for="email">Email:</label>
-				<input type="text" name="email" placeholder="john.doe@example.com" value="<?php echo $email?>">
-				
-				<label for="message">Message:</label>
-				<textarea name="message" placeholder="Type your message here..." value="<?php echo $message ?>"></textarea>
-				
-				<input type="submit" name="submit" value="Send Message!">
-			<fieldset>
+		<fieldset>
+			<label for="name">Name:</label>
+			<input type="text" name="name" placeholder="John Doe">
+			
+			<label for="email">Email:</label>
+			<input type="text" name="email" placeholder="john.doe@example.com">
+			
+			<label for="message">Message:</label>
+			<textarea name="message" placeholder="Type your message here..."></textarea>
+			
+			<input type="submit" name="submit" value="Send Message!">
+		<fieldset>
 		</form>
 	</div>
 </div>
