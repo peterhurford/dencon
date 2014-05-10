@@ -2,13 +2,12 @@
 	<head>
 		<title>Denison Convention - March 29-30 @ Denison</title>
 		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-		<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 		<%= csrf_meta_tags %>
 	</head>
 	<body>
 		<div id="container">
 			<div id="navbar">
-				<a id="logo" href="index.php">
+				<a id="logo" href="/">
 					<div class="logo">
 						<img src="logo.png">
 						<p align="center">Denison University<br><small>March 29 - 30<br>9 am - 4 am</small></p>
@@ -29,6 +28,8 @@
 			</div>
 
 			<%= yield %>
+
+			<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 
 		</div>
 	</body>
