@@ -1,25 +1,24 @@
 /*
-	Theme for Denison Convention, Design 2.1.2
-	Theme by Peter Hurford <www.peterhurford.com> with design help from Anna Rumbough and Kate Lowry.
-	
-	Inspiration from King Size Theme <http://www.kingsizetheme.com/>, Naz Hamid's site <http://nazhamid.com/>, and Wilson Miner's site <http://wilsonminer.com/>.
-	
-	Background image script from the Backstretch plug-in <http://srobbin.com/jquery-plugins/backstretch/> using the JQuery library <http://www.jquery.com/>.
-	
-	Roll-over Facebook button CSS adapted from Elated <http://www.elated.com/articles/css-rollover-buttons/>.
-	
-	Contact form PHP adapted from FreeContactForm <http://www.freecontactform.com/email_form.php>.
-	Contact form CSS adapted from Line25 <http://line25.com/tutorials/create-a-stylish-contact-form-with-html5-css3>.
-	
-	HelveticaNeue implementation adapted from CSS Tricks <http://css-tricks.com/snippets/css/better-helvetica/>.
+  Theme for Denison Convention, Design 2.1.2
+  Theme by Peter Hurford <www.peterhurford.com> with design help from Anna Rumbough and Kate Lowry.
+  
+  Inspiration from King Size Theme <http://www.kingsizetheme.com/>, Naz Hamid's site <http://nazhamid.com/>, and Wilson Miner's site <http://wilsonminer.com/>.
+  
+  Background image script from the Backstretch plug-in <http://srobbin.com/jquery-plugins/backstretch/> using the JQuery library <http://www.jquery.com/>.
+  
+  Roll-over Facebook button CSS adapted from Elated <http://www.elated.com/articles/css-rollover-buttons/>.
+
+  Contact form CSS adapted from Line25 <http://line25.com/tutorials/create-a-stylish-contact-form-with-html5-css3>.
+  
+  HelveticaNeue implementation adapted from CSS Tricks <http://css-tricks.com/snippets/css/better-helvetica/>.
 */
 
 
 /* Default */
 * {
-	margin: 0;
-	padding: 0;
-	font-family: "HelveticaNeue-UltraLight", "Helvetica Neue UltraLight", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  margin: 0;
+  padding: 0;
+  font-family: "HelveticaNeue-UltraLight", "Helvetica Neue UltraLight", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
   font-weight: 300;
   letter-spacing: 1px;
 }
@@ -27,156 +26,163 @@
 
 /* Content */
 #content {
-	position: absolute;
-	left: 400px;
-	width: 600px;
-	min-height: 100%;
-	padding: 15px 15px 40px 15px;
-	background: rgba(0, 0, 0, 0.85);
-	color: #ffffff;
+  position: absolute;
+  left: 400px;
+  width: 600px;
+  min-height: 100%;
+  padding: 15px 15px 40px 15px;
+  background: rgba(0, 0, 0, 0.85);
+  color: #ffffff;
 }
 #content h1 {
-	color: #888888;
-	padding: 35px 20px 40px 40px;
-	text-transform: uppercase;
+  color: #888888;
+  padding: 35px 20px 40px 40px;
+  text-transform: uppercase;
 }
 #content p {
-	padding: 10px 40px;
-	line-height: 30px;
+  padding: 10px 40px;
+  line-height: 30px;
 }
 #content a:visited, a {
-	color: #a5a5a5;
-	font-weight: bold;
+  color: #a5a5a5;
+  font-weight: bold;
 }
 #content a:hover { color: #a00a0b; }
 
 #content table, th, td {
-	margin: 0px 20px;
-	padding: 3px 15px;
-	background-color: #cccccc;
-	font-family: Helvetica;
+  margin: 0px 20px;
+  padding: 3px 15px;
+  background-color: #cccccc;
+  font-family: Helvetica;
 }
 
 #content table {
-	padding: 20px;
+  padding: 20px;
 }
 
 #content th {
-	font-weight: bold;
+  font-weight: bold;
 }
 
+
+/* Nav Bar */
+#navbar {
+  position: absolute;
+  left: 50px;
+  width: 300px;
+  padding: 15px 15px 40px 15px;
+  min-height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  text-transform: uppercase;
+}
+#navbar a { text-decoration: none; }
+
+#navbar .logo {
+  padding: 30px 0px;
+}
+#navbar .logo p { 
+  padding: 0px 40px;
+  font-size: 120%;
+  color: white;
+}
+#navbar .logo img {
+  height: 205px;
+  width: 300px;
+}
+
+#navbar .menu a:visited, #navbar .menu a {
+  display: block;
+  width: 300px;
+  color: #ffffff;
+  text-align: center;
+  font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+#navbar .menu a:hover {
+  background-color:#888888;
+  color: #000000;
+}
+#navbar .menu ul {
+  list-style: none;
+  line-height: 50px;
+  font-size: 160%;
+}
+
+#navbar .buttons { padding-left: 125px; }
+#navbar .buttons li {
+  float:left;
+  padding-right:20px;
+  list-style:none;
+}
+#fb-b {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: url("pics/facebook.png") no-repeat 0 0;
+}
+#fb-b:hover { 
+  background-position: 0 -50px;
+}
+#fb-b span {
+  position: absolute;
+  top: -999em;
+}
+
+
+
+/* Changes to content and navbar with smaller width */
+@media screen and (min-width:800px) {
+  #navbar { visibility: hidden; }
+}
 
 /* Contact Form */
 #contact { padding-top: 20px; }
 #contact form, fieldset, input, textarea {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	style: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  style: none;
 }
 #contact label {
-	float: left;
-	clear: left;
-	margin: 0 20px 0 0;
-	width: 95px;
-	text-align: right;
-	font-size: 16px;
-	line-height: 50px;
+  float: left;
+  clear: left;
+  margin: 0 20px 0 0;
+  width: 95px;
+  text-align: right;
+  font-size: 16px;
+  line-height: 50px;
 }
 #contact input {
-	width: 350px;
-	height: 35px;
-	padding: 5px 20px 0px 20px;
-	margin: 0 0 20px 0;
-	font-size: 16px;
+  width: 350px;
+  height: 35px;
+  padding: 5px 20px 0px 20px;
+  margin: 0 0 20px 0;
+  font-size: 16px;
 }
 #contact input[type="submit"] {
-	margin-left: 115px;
-	cursor: pointer;
+  margin-left: 115px;
+  cursor: pointer;
 }
 #contact textarea {
-	width: 350px;
-	height: 200px;
-	padding: 12px 20px 0 20px;
-	margin: 0 0 20px 0;
-	font-size: 16px;
+  width: 350px;
+  height: 200px;
+  padding: 12px 20px 0 20px;
+  margin: 0 0 20px 0;
+  font-size: 16px;
 }
 input:focus, textarea:focus { background: #888888; }
 input[type="submit"]:hover { background: #888888; }
 
 #content #errors {
-	background: red;
-	padding: 20px;
+  background: red;
+  padding: 20px;
 }
 #content #good {
-	background: green;
-	padding: 20px;
+  background: green;
+  padding: 20px;
 }
 #content #errors li {
-	margin-left: 100px;
-	padding-left: 20px;
-}
-
-/* Nav Bar */
-#navbar {
-	position: absolute;
-	left: 50px;
-	width: 300px;
-	padding: 15px 15px 40px 15px;
-	min-height: 100%;
-	background: rgba(0, 0, 0, 0.6);
-	text-transform: uppercase;
-}
-#navbar a { text-decoration: none; }
-
-#navbar .logo {
-	padding: 30px 0px;
-}
-#navbar .logo p { 
-	padding: 0px 40px;
-	font-size: 120%;
-	color: white;
-}
-#navbar .logo img {
-	height: 205px;
-	width: 300px;
-}
-
-#navbar .menu a:visited, #navbar .menu a {
-	display: block;
-	width: 300px;
-	color: #ffffff;
-	text-align: center;
-	font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-	font-weight: 100;
-	letter-spacing: 1px;
-}
-#navbar .menu a:hover {
-	background-color:#888888;
-	color: #000000;
-}
-#navbar .menu ul {
-	list-style: none;
-	line-height: 50px;
-	font-size: 160%;
-}
-
-#navbar .buttons { padding-left: 125px; }
-#navbar .buttons li {
-	float:left;
-	padding-right:20px;
-	list-style:none;
-}
-#fb-b {
-	display: block;
-	width: 50px;
-	height: 50px;
-	background: url("pics/facebook.png") no-repeat 0 0;
-}
-#fb-b:hover { 
-	background-position: 0 -50px;
-}
-#fb-b span {
-	position: absolute;
-	top: -999em;
+  margin-left: 100px;
+  padding-left: 20px;
 }
