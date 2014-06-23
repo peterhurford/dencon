@@ -1,7 +1,7 @@
 <html>
 	<head>
 		<title>Denison Convention - March 29-30 @ Denison</title>
-		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+		<link href="assets/style.css" media="all" rel="stylesheet" />
 		<%= csrf_meta_tags %>
 	</head>
 	<body>
@@ -14,11 +14,9 @@
 					</div>
 				</a>
 				<div class="menu">
-					<ul>
-						<li><a id="directions" href="/directions">Directions</a></li>
-						<li><a id="schedule" href="/schedule">Event Schedule</a></li>
-						<li><a id="contactm" href="/contact">Contact</a></li>
-					</ul>
+					<a id="directions" href="/directions">Directions</a>
+					<a id="schedule" href="/schedule">Event Schedule</a>
+					<a id="contactm" href="/contact">Contact</a>
 				</div>
 				<div class="buttons">
 					<ul>
