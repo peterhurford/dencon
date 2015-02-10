@@ -1,22 +1,23 @@
 require 'sinatra'
+require 'haml'
 
 get '/' do
-  erb :index
+  haml :index
 end
 
 get '/directions' do
-  erb :directions
+  haml :directions
 end
 
 get '/schedule' do
-  erb :schedule
+  haml :schedule
 end
 
 get '/contact' do
-  erb :contact
+  haml :contact
 end
 
 not_found do
   status 404
-  erb :fourohfour
+  haml :fourohfour
 end

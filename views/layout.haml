@@ -1,0 +1,28 @@
+%head
+  %title
+    Denison Convention - March 29-30 @ Denison
+  %link{:type => "text/css", :rel => "stylesheet", :href => "css/style.css"}
+%body
+  #container
+    #navbar
+      %a{:id => "logo", :href => "/"}
+        .logo
+          %img{:src => "logo.png"}
+          Denison University
+          %small
+            March 29 - 30
+            9 am - 4 am
+      .menu
+        %a{:id => "directions", :href => "/directions"}
+          Directions
+        %a{:id => "schedule", :href => "/schedule"}
+          Event Schedule
+        %a{:id => "contact", :href => "/contact"}
+          Contact
+      .buttons
+        %a{:id => "fb-b", :href => "https://www.facebook.com/events/1388301138095585/"}
+    =yield
+%script{:src => "assets/jquery.min.js"}
+%script{:src => "assets/jquery.backstretch.min.js"}
+%script{:src => "assets/menu.backstretch.js"}
+%script{:src => "assets/equalheights.js"}
