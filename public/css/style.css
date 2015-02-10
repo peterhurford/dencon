@@ -107,6 +107,11 @@
 }
 
 #navbar .buttons { padding-left: 125px; }
+#navbar .paypal {
+  padding-top: 25px;
+  padding-left: 25px;
+  text-align: center;
+}
 #fb-b {
   display: block;
   width: 50px;
