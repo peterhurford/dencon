@@ -15,3 +15,8 @@ end
 get '/contact' do
   erb :contact
 end
+
+not_found do
+  status 404
+  erb :fourohfour
+end
